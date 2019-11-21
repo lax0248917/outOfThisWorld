@@ -12,7 +12,7 @@
 
 ## How will users interact with your web site?
 
-> The user will navigate to the application page. From there they will be presented with a form to fill out including a date, and whether they would like the Nasa image description or not. The webapp will take that information send an GET Request to the Nasa APOD API and return the image displayed in a gallery format.
+> The user will navigate to the application page. From there they will be presented with a form to fill out including a date, and whether they would like the Nasa image description or not. The webapp will take that information send a GET Request to the Nasa APOD API and return the image displayed in a gallery format.
 
 ## What 3rd Party API(s) will you integrate with?
 
@@ -34,6 +34,6 @@
 
 * How often will you commit your code? - I will try to stick to once a day, or after each major change.
 
-* How will you test your web site? - ???
+* How will you test your web site? - I have not used testing tools before, I will research this. Any advice for beginner would be appreciated.
 
-* How will you design the layout of your website? - Have never used a wireframing tool, but for this project I am going to, so I can learn the concepts.
+* How will you design the layout of your website? - Have never used a wireframing tool, but for this project I am going to, so I can learn the concepts. I am going to start with Marvel.
