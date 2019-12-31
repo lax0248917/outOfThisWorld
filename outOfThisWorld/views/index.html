@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="../index.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css"> -->
@@ -35,20 +34,33 @@
   </nav>
 </main>
 
-<section>
+<!-- <section>
   <div>
     <h2 class="today">Choose A Date!!</h2>
   </div>
   <div>
     <input type="date" name="datePicked">
   </div>
-</section>
+</section> -->
 
-<section>
-  <div>
-    <ul id="picture"></ul>
+<main>
+  <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">Atronomy Picture of the Day</div>
+    <div class="card-body">
+      <h4 class="card-title">NASA IMAGE!!</h4>
+      <p class="card-text">Click the button to see today's picture!</p>
+    </div>
   </div>
-</section>
+  <div class="button-section">
+    <button id="btn" type="button" class="btn btn-success btn-lg">Go!</button>
+  </div>
+</main>
 
+<Section>
+  <div id="APOD" class="card mb-3" style="max-width: 60rem;">
+  </div>
+</Section>
+
+<script src="../index.js"></script>
 </body>
 </html>

@@ -1,31 +1,22 @@
 //Not working yet!
 
-function createNode(element) {
-  return document.createElement(element);
-}
+const API_URL = "https://api.nasa.gov/planetary/apod?api_key=q72kF4az4WZ1kfkUbJjt20qpUQRfOSPCvlFlo7Ee";
+const apodElement = document.querySelector('.APOD');
 
-function append(parent, el) {
-return parent.appendChild(el);
-}
+async function getAPOD() {
+  const response = await fetch(API_URL);
+  const json = await response.json();
+  console.log(json.url);
+  const elem = document.createElement("img");
+  elem.setAttribute("src", json.url);
+  document.getElementById("APOD").appendChild(elem); 
+};
+const btn = document.getElementById("btn");
+btn.addEventListener("click", getAPOD);
 
-const ul = document.getElementById('picture');
-const api = 'https://api.nasa.gov/planetary/apod?api_key=q72kF4az4WZ1kfkUbJjt20qpUQRfOSPCvlFlo7Ee';
 
-fetch(api)
-.then((resp) => resp.json())
-.then(function(data) {
-let pictures = data.hdurl;
-return pictures.map(function(picture) {
-  let li = createNode('li'),
-      img = createNode('img');
 
-  append(li, img);
-  append(ul, li);
-})
-})
-.catch(function(error) {
-console.log(error);
-});  
+  
 
 
 

@@ -14,7 +14,7 @@ body {
   padding-top: 100px;
 }
 
-input {
+/* input {
   display: block;
   margin: auto;
   margin-top: 30px;
@@ -26,6 +26,16 @@ input {
   display: block;
   margin: auto;
   margin-top: 200px;
+  text-align: center;
+} */
+
+.card {
+  margin: auto;
+  margin-top: 200px;
+}
+
+.button-section {
+  margin-top: 2rem;
   text-align: center;
 }
 
