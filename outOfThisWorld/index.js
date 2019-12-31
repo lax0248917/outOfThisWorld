@@ -1,4 +1,3 @@
-//Not working yet!
 
 const API_URL = "https://api.nasa.gov/planetary/apod?api_key=q72kF4az4WZ1kfkUbJjt20qpUQRfOSPCvlFlo7Ee";
 const apodElement = document.querySelector('.APOD');
